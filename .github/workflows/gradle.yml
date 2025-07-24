@@ -17,4 +17,5 @@ jobs:
   List_Directory:
     runs-on: ubuntu-18.04
     steps:
-      - run: "ls -l"
+      - name: List current dir
+        run: "ls -l"
