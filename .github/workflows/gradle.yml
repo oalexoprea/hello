@@ -15,7 +15,7 @@ on:
 
 jobs:
   List_Directory:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: List current dir
         run: ls -l
