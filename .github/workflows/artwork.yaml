@@ -1,0 +1,16 @@
+name: Art work
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  List_Directory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Cowsay
+        run: |
+          sudo apt-get install cowsay -y
+          cowsay -f dragon "test"
