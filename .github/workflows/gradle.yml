@@ -18,4 +18,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: List current dir
-        run: "ls -l"
+        run: ls -l
