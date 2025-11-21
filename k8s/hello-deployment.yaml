@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: hello
-          image: oalexoprea/hello:latest
+          image: docker.io/oalexoprea/hello:latest
           ports:
             - containerPort: 8080
