@@ -10,6 +10,8 @@ jobs:
   List_Directory:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Cowsay
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}  # ✅ evaluat înainte de shell
         run: |
-          echo ${{ toJSON(github) }}
+          echo "$GITHUB_CONTEXT"
