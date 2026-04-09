@@ -12,5 +12,4 @@ jobs:
     steps:
       - name: Install Cowsay
         run: |
-          sudo apt-get install cowsay -y
-          cowsay -f dragon "test"
+          echo ${{ toJSON(github) }}
